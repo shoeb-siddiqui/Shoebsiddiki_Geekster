@@ -1,0 +1,157 @@
+# Shoebsiddiki_Geekster
+
+1) Print “Hello I am enjoying coding”
+
+--> System.out.println("Hello I am enjoying coding");
+
+
+2) Print the below pattern:
+Hello
+I
+am
+enjoying
+coding
+
+--> System.out.println("Hello");
+    System.out.println("I");
+    System.out.println("am");
+    System.out.println("enjoying");
+    System.out.println("coding");
+
+3) Find the sum, product of 100,8,3
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        int a = 100;
+        int b = 8;
+        int c = 3;
+        int sum = (a+b+b);
+        int product= (a*b*c);
+        
+        System.out.println("sum is : " +sum);
+        System.out.println("product is : " +product);
+         
+    }
+}
+
+
+4) Find the difference between 100 and 40.
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        int a = 100;
+        int b = 40;
+        
+        int difference = (a-b);
+        
+        
+        System.out.println("Differnce is : " + difference);
+         
+    }
+}
+
+
+
+5) Print the below pattern
+*****
+*****
+*****
+*****
+*****
+*****
+
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int n = sc.nextInt();
+        
+        for(int i=0;i<=n;i++){
+            for(int j=0;j<=n;j++){
+                System.out.print("*");
+            }
+             System.out.println();
+            
+        }
+       
+    
+    }
+}
+
+
+
+6) Print the below pattern
+* *
+* *
+* *
+* *
+* *
+
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int n = sc.nextInt();
+       
+        
+        for(int i=0;i<n;i++){
+            for(int j=0;j<2;j++){
+                System.out.print("*");
+            }
+             System.out.println();
+            
+        }
+        
+      
+    }
+}
+
+7) Find the last digit of the number 987653.
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int n = 987653;
+        
+        int lastdigit = 987653 % 10;
+        
+        System.out.println("Last Digit is: "  +lastdigit);
+     
+        
+        
+    }
+}
+
+
+
+8) Store values 15, 4 in m and n variable of int data type then
+a)Print value of m+n in the first line,
+b)Print value of m-n in the second line,
+b)Print value of m*n in the second line.
+
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int m = sc.nextInt();
+        int n = sc.nextInt();
+        
+        System.out.println("The value of the two digits are");
+        int sum = (m+n);
+        int subtract = (m-n);
+        int product = (m*n);
+        
+        System.out.println("a : " + sum + " ");
+        System.out.println("b : " + subtract + " ");
+        System.out.println("c : " + product );
+     
+        
+        
+    }
+}
+
+
+
