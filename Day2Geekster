@@ -1,0 +1,302 @@
+# Shoebsiddiki_Geekster
+
+1) Take the diameter of a circle as input. Print the area of the circle as integer input.
+
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter the diameter of the circle :" + " ");
+       
+       int diameter = sc.nextInt();
+       
+       int area = (22 * diameter *diameter )/7;
+       
+       System.out.println("Area of the circle is: " + area);
+        
+        
+    }
+}
+
+
+2) Take the base and height of a triangle as input and store them in double variables x
+and y and print its area.
+
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+       System.out.println("Enter the diameter of the base of the triangle :" + " ");
+       
+       double base = sc.nextDouble();
+       
+       System.out.println("Enter the diameter of the base of the triangle :" + " ");
+    
+       double height = sc.nextDouble();
+       
+       double area = (base * height)/2;
+       
+       System.out.println("Area of the circle is: " + area);
+        
+        
+    }
+}
+
+3) Take an input x, check if it is greater than 1000 or not. Print true or false.
+
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        boolean isgreater = true;
+        int x = sc.nextInt();
+        
+        if(x < 1000){
+            isgreater = false;
+           
+        }
+        if(isgreater == true){
+            System.out.println("true");
+        }else{
+            System.out.println("false");
+        }
+        
+    }
+}
+
+4) For 3rd and 4th Question. Attempt the Quiz
+https://forms.gle/bJCRD9hTR3PzZ4uN6
+
+----> Attempted
+
+
+5) Find the answer of the following expressions
+a. Int x = 7+3+4
+b. Int x = 12 + 5 + 8
+c. Int x= 13/5 + 18/8
+d. double x= 12 + 5.0 + 2.76
+e. double x= 12/3 + 13/2
+f. double x=12/3 + 13.0/2
+g. double x=14/2 + 15.0/4
+h. double x= 13/2 % 5/3
+i. double x= 17.0/2 % 16.0/4
+
+output : a) 14
+         b) 25
+         c) 4
+         e) 10
+         f) 10.5
+         g) 10.75
+         h) 0
+         i) 2.125
+         
+
+6) Store these expressions inside a Boolean variable ans. Print their outputs true or
+false accordingly
+a. boolean ans = 3 > 2
+b. boolean ans = 3 ≥ 3
+c. boolean ans = 4 + 3 > 9
+d. boolean ans = 10 + 8 > 10
+e. boolean ans = 12 != 10
+f. boolean ans = 13 == 13
+g. boolean ans = 14 != 14
+h. boolean ans = 20 == 5*4
+i. boolean ans = 30 != 3+4-10
+j. boolean ans = 20 == 41/2
+
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+      a)    
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        boolean ans = a>b;
+        System.out.println(ans);
+        
+        output: true;
+     b)
+     
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        boolean ans = a>=b;
+        System.out.println(ans);
+        
+        output: true;
+       
+    c) 
+    
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        boolean ans = (a+b)>9;
+        System.out.println(ans);
+        
+        output: false;
+      
+    d)
+   
+       int a = sc.nextInt();
+       int b = sc.nextInt();
+       boolean ans = (a+b)>b;
+       System.out.println(ans);
+        
+       output: true;
+     
+   e) 
+  
+      int a = sc.nextInt();
+      int b = sc.nextInt();
+      boolean ans = (a != b);
+      System.out.println(ans);
+        
+      output: true;
+    
+    
+   f) 
+  
+      int a = sc.nextInt();
+      int b = sc.nextInt();
+      boolean ans = (a==b);
+      System.out.println(ans);
+        
+      output: true;
+    
+   g)
+  
+         int a = sc.nextInt();
+         int b = sc.nextInt();
+         boolean ans = (a!=b);
+         System.out.println(ans);
+        
+          output: false;
+    
+      h) 
+ 
+         int a = sc.nextInt();
+         int b = sc.nextInt();
+         int d = sc.nextInt();
+         int c = a * b
+         boolean ans = (d == c);
+         System.out.println(ans);
+        
+         output: true;
+    
+     i)    
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        int d = sc.nextInt();
+        int s = (b+c-d);
+        boolean ans = (a != s);
+        System.out.println(ans);
+        
+        output: true;
+        
+        
+         j)    
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        int d = (b/c);
+        boolean ans = (a == d);
+        System.out.println(ans);
+        
+        output: true;
+    
+   
+ 
+7) Take marks of a student in five subjects as input in a double variable. Print the sum
+of total marks and also find the percentage of the student.
+
+
+package Patteriverse;
+import java.util.Scanner;
+
+public class pratise {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		double n1 = sc.nextDouble();
+		double n2 = sc.nextDouble();
+		double n3 = sc.nextDouble();
+		double n4 = sc.nextDouble();
+		double n5 = sc.nextDouble();
+		
+		
+		double sum = (n1+n2+n3+n4+n5)/(5.0);
+		System.out.println("The total marks by all the subject is : " + " "+ sum);
+		
+		double percentage = (float)(9.5*(sum));
+		
+		System.out.println("The pecentage of the studnet is:  " +" " + percentage);
+		
+		
+	}
+
+}
+
+
+8) Take four integer inputs and check if the product of them is greater than 1000 or
+not. Print true or false accordingly.
+
+package Patteriverse;
+import java.util.Scanner;
+
+public class pratise {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int n1 = sc.nextInt();
+		int n2 = sc.nextInt();
+		int n3 = sc.nextInt();
+		int n4 = sc.nextInt();
+		
+		int  Gd = 1000;
+		int product = (n1*n2*n3*n4);
+		System.out.println("The sum of the four numbers are: " + " " + product);
+		
+		if(product > Gd) {
+			System.out.println("The value of the product is greater: "+ " "+"true");
+		}else {
+			System.out.println("The value of the product is smaller:" +" "+"false");
+		}
+		
+	}
+
+}
+
+
+9) Take an integer input and check if the number is divisible by 7 or not.
+
+package Patteriverse;
+import java.util.Scanner;
+
+public class pratise {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int n1 = sc.nextInt();
+		
+		if( n1 % 7 == 0) {
+			System.out.println("Is divisible");
+		}else {
+			System.out.println("Not divisible");
+		}
+	
+		
+		
+	}
+
+}
+
+10) Attempt the Quiz
+https://forms.gle/bJCRD9hTR3PzZ4uN6
+
+---> Attempted
