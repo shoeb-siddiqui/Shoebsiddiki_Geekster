@@ -1,0 +1,189 @@
+# Shoebsiddiki_Geekster
+
+1. Take two numbers as integer input and print the larger number as the output in the
+integer format.
+
+package Patteriverse;
+import java.util.Scanner;
+
+public class pratise {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int a =sc.nextInt();
+		int b = sc.nextInt();
+		
+		if(a>b) {
+			System.out.println(a);
+		}else {
+			System.out.println(b);
+		}
+			
+	}
+
+}
+
+
+2. Take an integer input and print Even if the integer is even else print Odd.
+
+
+import java.util.Scanner;
+
+public class pratise {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int a =sc.nextInt();
+	
+		
+		if(a%2==0) {
+			System.out.println("even");
+		}else {
+			System.out.println("odd");
+		}
+		
+	}
+
+}
+
+
+
+
+3. Take income of a person as input from the user, print “No tax to be paid” if income
+is less than 500,000 and print “Tax to be paid” if income is greater than or equal to
+500,000.
+
+
+import java.util.Scanner;
+
+public class pratise {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int a =sc.nextInt();
+		int b = 500000;
+	
+		
+		if(a<b) {
+			System.out.println("No tax to be paid");
+		}else {
+			System.out.println("Tax to be paid");
+		}
+	
+		
+	}
+
+}
+
+
+4. A teacher adds 4 marks as grace marks only if the marks of the student is below 33.
+Print the final marks of student given by the teacher.
+
+import java.util.Scanner;
+
+public class pratise {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("enter the marks: ");
+		int a = sc.nextInt();
+		
+		System.out.println("enter the total marks: ");
+		int b = sc.nextInt();
+		
+		System.out.println("Add marks");
+		int c = sc.nextInt();
+		
+		if(a<b) {
+			a=a+c;
+			System.out.println("The total marks when added four is: " +" " + a);
+		}else {
+			if(a>b) {
+				System.out.println(a);
+			}
+		}
+		
+	}
+
+}
+
+
+
+5. Take age as input from the user.
+    a. Print “Super Senior Citizen” if age is equal to or above 70
+    b. Print “Senior Citizen” if age is below 70 but equal to or above 59.
+    c. Print “Adult” if age is below 59 but equal to or above 18.
+    d. Print “Underage” is age is below 18 but equal to or above 1.
+    e. Print “New Born” if none of the above conditions follow.
+    
+    import java.util.Scanner;
+
+public class pratise {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int age = sc.nextInt();
+		
+		if(age>=70 ) {
+			System.out.println("Super senior citizen");
+		}else {
+			if(age < 70 && age>=59) {
+				System.out.println("Senior citizen");
+			}else {
+				if(age < 59 && age >= 18) {
+					System.out.println("Adult");
+				}else {
+					if(age < 18 && age >= 1) {
+						System.out.println("Under age");
+					}else {
+						System.out.println("New Born");
+					}
+				}
+			}
+		}
+	
+	}
+
+}
+
+6. The government adds money into the account of a person based on his age. Take
+age and salary of the person as inputs. And print his final income.
+    a. if age is above 60, Rs. 1000 is added into the account
+    b. if age is above 40 and less than or equal to 60, Rs. 500 is added.
+    c. No money is added if the age is less than or equal to 40.
+    
+    import java.util.Scanner;
+
+public class pratise {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int age = sc.nextInt();
+		int salary = sc.nextInt();
+		
+		if(age > 60) {
+			salary = salary + 1000;
+				System.out.println("Added by 1000: " + " " + salary);
+			}else {
+				if(age > 40 && age <=60) {
+					salary = salary +500;
+					System.out.println("Added by 400: " + " " + salary);
+				}else {
+					if(age <= 40) {
+						System.out.println("No money is added to salary " + " " + salary);
+					}
+				}
+		}
+			
+		
+	}
+
+}
+    
+    
